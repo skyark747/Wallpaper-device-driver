@@ -2,8 +2,8 @@ import os
 import subprocess
 
 WALLPAPER_FILE = "/proc/wallpaper"
-path = "/home/skyark/Downloads/girl.jpg"
-path_2="/home/skyark/Downloads/change.jpg"
+path = "/path/to/wallpaper1"
+path_2="/path/to/wallpaper2"
 def set_wallpaper(wallpaper_path,wallpaper_path_2,change):
     try:
         if change==False:
@@ -35,4 +35,5 @@ def change_wallpaper():
             print(f"Error monitoring file: {e}")
 
 if __name__ == "__main__":
+    print("python file is running..")
     change_wallpaper()
